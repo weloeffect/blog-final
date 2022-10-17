@@ -58,7 +58,7 @@ function Add_Post() {
     e.preventDefault()
     sendRequest().then(data => console.log(data))
     history.push("/user/Blogs")
-    window.location.reload();
+    // window.location.reload();
     console.log(input)
     
   }
