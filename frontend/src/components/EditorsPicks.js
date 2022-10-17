@@ -8,6 +8,7 @@ import "../css/editors_picks.css"
 import { Button } from '@mui/material';
 import { useHistory } from 'react-router-dom';
 function EditorsPicks() {
+  const history = useHistory();
   const id1 = "633038d0bc01dba69485e729"
   const id2 = "6330393bbc01dba69485e745"
   const id3 = "63303971bc01dba69485e759"
