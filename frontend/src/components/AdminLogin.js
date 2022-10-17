@@ -21,7 +21,7 @@ function AdminLogin() {
       }))
     }
     const sendRequest = async() =>{
-      const res = await axiosInstance.post('/admin/login',{
+      const res = await axiosInstance.post('admin/login',{
         email:input.email,
         password:input.password,
       }).catch(err => console.log(err))

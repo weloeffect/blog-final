@@ -4,6 +4,7 @@ import {Helmet} from "react-helmet"
 // import {axiosInstance} from '../axioss';
 import axios from 'axios';
 import { useHistory, useParams } from 'react-router-dom';
+import { axiosInstance } from '../axioss';
 function AddPostAdmin() {
     const [data, setData] = useState('');
     const [photo, setPhoto] = useState('');
@@ -40,7 +41,7 @@ function AddPostAdmin() {
       formData.append('user', input.user);
       
       
-      const res = await axios.post(`http://localhost:5000/admin/${id}/createPost`,formData)
+      const res = await axiosInstance.post(`admin/${id}/createPost`,formData)
       .catch(err => console.log(err));
       const data = await res.data
       return data

@@ -7,8 +7,8 @@ import Blog from '../components/Blog'
 
 function Blogs() {
   const [posts, setPosts] = useState()
-  const publicFolder = "http://localhost:5000/images/"
-  // const publicFolder = "https://blog-backend101.herokuapp.com/images/"
+  // const publicFolder = "http://localhost:5000/images/"
+  const publicFolder = "https://blog-backend101.herokuapp.com/images/"
   const sendRequest = async()=>{
     const res = await axiosInstance.get('/posts/view').catch(err => console.log(err))
     const data = await res.data

@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import { axiosInstance } from '../axioss'
 import "../css/admin_add.css"
 function AddAuthor() {
     const [input, setinput] = useState({
@@ -18,7 +19,7 @@ function AddAuthor() {
         })
       }
       const sendRequest = async() =>{
-        const res = await axios.post('http://localhost:5000/admin/addAuthor',{
+        const res = await axiosInstance.post('admin/addAuthor',{
         firstname: input.firstname,
         lastname:input.lastname,
         email:input.email,

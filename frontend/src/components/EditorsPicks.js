@@ -11,8 +11,8 @@ function EditorsPicks() {
   const id1 = "633038d0bc01dba69485e729"
   const id2 = "6330393bbc01dba69485e745"
   const id3 = "63303971bc01dba69485e759"
-  const publicFolder = "http://localhost:5000/images/"
-  // const publicFolder = "https://blog-backend101.herokuapp.com/images/"
+  // const publicFolder = "http://localhost:5000/images/"
+  const publicFolder = "https://blog-backend101.herokuapp.com/images/"
   const history = useHistory()
   const [post, setPost] = useState()
   const [post2, setPost2] = useState()
@@ -26,38 +26,38 @@ function EditorsPicks() {
 //  let catID;
   const sendRequest = async()=>{
     // main block
-    const res = await axiosInstance.get(`/posts/view/${id1}`).catch(err => console.log(err))
+    const res = await axiosInstance.get(`posts/view/${id1}`).catch(err => console.log(err))
     const catID = await res.data.post.category
     const userID = await res.data.post.user
     const data = await res.data
     // main block
-    const res2 = await axiosInstance.get(`/categories/view_category/${catID}`).catch(err => console.log(err))
+    const res2 = await axiosInstance.get(`categories/view_category/${catID}`).catch(err => console.log(err))
     const data2 = await res2.data
     // main block
-    const res3 = await axiosInstance.get(`/user/${userID}`).catch(err => console.log(err))
+    const res3 = await axiosInstance.get(`user/${userID}`).catch(err => console.log(err))
     const data3 = await res3.data
     // sub block one
-    const Subres = await axiosInstance.get(`/posts/view/${id2}`).catch(err => console.log(err))
+    const Subres = await axiosInstance.get(`posts/view/${id2}`).catch(err => console.log(err))
     const SubcatID = await Subres.data.post.category
     const SubuserID = await Subres.data.post.user
     const Subdata = await Subres.data
 // sub block one
-    const Subres1 = await axiosInstance.get(`/categories/view_category/${SubcatID}`).catch(err => console.log(err))
+    const Subres1 = await axiosInstance.get(`categories/view_category/${SubcatID}`).catch(err => console.log(err))
     const Subdata2 = await Subres1.data
 // sub block one
-    const Subres3 = await axiosInstance.get(`/user/${SubuserID}`).catch(err => console.log(err))
+    const Subres3 = await axiosInstance.get(`user/${SubuserID}`).catch(err => console.log(err))
     const Subdata3 = await Subres3.data
 
      // sub block two
-     const Sub2res = await axiosInstance.get(`/posts/view/${id3}`).catch(err => console.log(err))
+     const Sub2res = await axiosInstance.get(`posts/view/${id3}`).catch(err => console.log(err))
      const Sub2catID = await Sub2res.data.post.category
      const Sub2userID = await Sub2res.data.post.user
      const Sub2data = await Sub2res.data
  // sub block two
-     const Sub2res2 = await axiosInstance.get(`/categories/view_category/${Sub2catID}`).catch(err => console.log(err))
+     const Sub2res2 = await axiosInstance.get(`categories/view_category/${Sub2catID}`).catch(err => console.log(err))
      const Sub2data2 = await Sub2res2.data
  // sub block two
-     const Sub2res3 = await axiosInstance.get(`/user/${Sub2userID}`).catch(err => console.log(err))
+     const Sub2res3 = await axiosInstance.get(`user/${Sub2userID}`).catch(err => console.log(err))
      const Sub2data3 = await Sub2res3.data
     // console.log(catID)
     // console.log(data)

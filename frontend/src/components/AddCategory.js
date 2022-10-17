@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import { axiosInstance } from '../axioss'
 import "../css/admin_add.css"
 function AddCategory() {
     const [input, setinput] = useState({
@@ -15,7 +16,7 @@ function AddCategory() {
         })
       }
       const sendRequest = async() =>{
-        const res = await axios.post('http://localhost:5000/admin/addCategory',{
+        const res = await axiosInstance.post('admin/addCategory',{
         name: input.name,
         description:input.description
       })

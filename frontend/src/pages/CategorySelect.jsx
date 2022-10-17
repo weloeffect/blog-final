@@ -8,7 +8,7 @@ function CategorySelect() {
     const [cats, setCats] = useState()
     const history = useHistory()
     const sendRequest = async()=>{
-    const res = await axiosInstance.get('/categories/select_category').catch(err => console.log(err))
+    const res = await axiosInstance.get('categories/select_category').catch(err => console.log(err))
     const data = await res.data
     return data
   }
