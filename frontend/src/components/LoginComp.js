@@ -21,7 +21,7 @@ function LoginComp() {
     }))
   }
   const sendRequest = async() =>{
-    const res = await axiosInstance.post('user/login',{
+    const res = await axiosInstance.post('/user/login',{
       email:input.email,
       password:input.password,
     }).catch(err => console.log(err))

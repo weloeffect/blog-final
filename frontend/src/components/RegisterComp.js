@@ -24,7 +24,7 @@ function RegisterComp() {
     }))
   }
   const sendRequest = async() =>{
-    const res = await axiosInstance.post('user/signup',{
+    const res = await axiosInstance.post('/user/signup',{
       firstname: input.firstname,
       lastname:input.lastname,
       email:input.email,
