@@ -15,7 +15,7 @@ function View_Post() {
     })
     
     // const publicFolder = "http://localhost:5000/images/"
-    const publicFolder = "https://blog-backend101.herokuapp.com/images/"
+    const publicFolder =  "https://blog-final101.herokuapp.com/images/"
     const slug = useParams().slug
     console.log(slug)
     const sendRequest = async()=>{

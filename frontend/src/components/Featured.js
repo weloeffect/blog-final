@@ -12,7 +12,7 @@ function Featured() {
   const id2 = "6330a497588663c9e5259847"
   const id3 = "633098541b0ed70b51f950e9"
   // const publicFolder = "http://localhost:5000/images/"
-  const publicFolder = "https://blog-backend101.herokuapp.com/images/"
+  const publicFolder =  "https://blog-final101.herokuapp.com/images/"
   const [post, setPost] = useState()
   const [post2, setPost2] = useState()
   const [post3, setPost3] = useState()

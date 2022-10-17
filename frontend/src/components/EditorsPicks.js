@@ -12,8 +12,7 @@ function EditorsPicks() {
   const id2 = "6330393bbc01dba69485e745"
   const id3 = "63303971bc01dba69485e759"
   // const publicFolder = "http://localhost:5000/images/"
-  const publicFolder = "https://blog-backend101.herokuapp.com/images/"
-  const history = useHistory()
+  const publicFolder =  "https://blog-final101.herokuapp.com/images/"
   const [post, setPost] = useState()
   const [post2, setPost2] = useState()
   const [post3, setPost3] = useState()

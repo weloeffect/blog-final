@@ -48,8 +48,8 @@ function Main() {
   const id1 = "63303b7abc01dba69485e78c"
   const id2 = "633099db1b0ed70b51f95108"
   const id3 = "63309a9f1b0ed70b51f95117"
-  const publicFolder = "http://localhost:5000/images/"
-  // const publicFolder = "https://blog-backend101.herokuapp.com/images/"
+  // const publicFolder = "http://localhost:5000/images/"
+  const publicFolder =  "https://blog-final101.herokuapp.com/images/"
   const [post, setPost] = useState()
   const [post2, setPost2] = useState()
   const [post3, setPost3] = useState()
