@@ -1,0 +1,37 @@
+import React,{ useEffect, useState }  from 'react'
+import {Link} from "react-router-dom"
+import { axiosInstance } from '../axioss'
+import Category from '../components/Category'
+
+function CategorySelect() {
+  const [cats, setCats] = useState()
+  const sendRequest = async()=>{
+    const res = await axiosInstance.get('/categories/select_category').catch(err => console.log(data))
+    const data = await res.data
+    return data
+  }
+  useEffect(()=>{
+    sendRequest().then(data=> setCats(data.cats))
+  },[])
+  console.log(cats)
+  return (
+    <section style={{marginTop: "20vh"}}>
+       {cats && cats.map((cat, index) => <Category id={cat._id}  name={cat.name}  description ={cat.description} />)}
+        {/* <div className="top">
+            <h1 className="text-center mt-5">Select a Category</h1>
+        </div>
+        <form>
+            <div className='grid-container'>
+              <ul>
+              {cats.map(cat=>(<li>{cat._id}</li>))}
+              </ul>
+            
+            </div> 
+           <Link to="/:id/add_post" className='btn btn-primary'>click me</Link> 
+        </form> */}
+
+    </section>
+  )
+}
+
+export default CategorySelect

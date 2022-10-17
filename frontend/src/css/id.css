@@ -1,0 +1,45 @@
+.Login{
+    margin-top: 20vh;
+}
+.logo{
+    object-fit: contain;
+    height: 40px;
+}
+.login-header{
+    margin: auto;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'DynaPuff', cursive;
+
+}
+
+.login-container{
+    position: relative;
+    padding: 20px;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.55);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.55);
+}
+.reg-container{
+    position: relative;
+    padding: 20px;
+    margin: auto;
+    width: 400px;
+    height: 550px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.55);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.55);
+}
+
+.error{
+    color: red;
+    font-size: 20px;
+}

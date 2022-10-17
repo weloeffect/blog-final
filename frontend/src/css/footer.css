@@ -1,0 +1,16 @@
+.footer{
+    height: 18vh;
+    margin-top: 50vh;
+    border-top:0.5px solid grey ;
+    background: rgb(220, 220, 220);
+}
+
+@media screen and (min-width: 1440px) {
+    .footer{
+        height: 200px;
+        margin-top: 30vh;
+        
+        border-top:0.5px solid grey ;
+        background: rgb(220, 220, 220);
+    }
+  }

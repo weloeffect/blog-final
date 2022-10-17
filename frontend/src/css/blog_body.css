@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+.blog-body{
+    height: auto;
+    position: relative;
+}
+.blog-container{
+    height: auto;
+}
+@media (min-width: 1400px){
+    .blog-container{
+        position: absolute;
+        height: auto;
+        background-color: red;
+        width: 50vw;
+        left: 25%;
+        top: 50px;
+        
+    }
+}

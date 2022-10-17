@@ -1,0 +1,27 @@
+.Add{
+    position: relative;
+    padding: 20px;
+    margin: auto;
+    margin-top: 10vh;
+    width: 60%;
+    height: 500px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.55);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.55);
+    
+
+}
+.success{
+  margin: auto;
+  background: rgb(248, 248, 4);
+  width: 50%;
+  border-radius: 10px ;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

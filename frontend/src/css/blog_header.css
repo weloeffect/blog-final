@@ -1,0 +1,45 @@
+.blog-header{
+    background-color: rgb(213, 213, 213);
+    height: 50vh;
+    position: relative;
+}
+
+
+
+
+@media (min-width: 1400px){
+    .blog-header{
+        background:  linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(' /sample.jpg') center  no-repeat;
+        background-size: 100vw 50vh;
+        background-color: rgb(169, 46, 46);
+        height: 50vh;
+        position: relative;
+    }
+    .title{
+        position: absolute;
+        left: 30%;
+        top: 20%;
+        border: 2px solid grey;
+        font-size: 40px;
+        width: 15%;
+        background-color: rgba(128, 128, 128, 0.485);
+        padding-left: 10px;
+    }
+    .body{
+        position: absolute;
+        left: 30%;
+        top: 40%;
+        font-size: 40px;
+        width: 15%;
+        padding-left: 10px;
+    }
+    .author-sign{
+        position: absolute;
+        left: 30%;
+        top: 80%;
+        font-size: 20px;
+        width: 15%;
+        padding-left: 10px;
+    }
+    
+}

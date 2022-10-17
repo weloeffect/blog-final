@@ -1,0 +1,27 @@
+.editors_picks{
+    box-sizing: border-box;
+    margin-top: 18%;
+}
+
+.head{
+    font-size: 40px;
+    border-bottom: 2px solid red;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.samples{
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.cards{
+    background-color: red;
+}
+@media (min-width: 1400px){
+    .editors_picks{
+        box-sizing: border-box;
+        margin-top: 12%;
+    }
+}
