@@ -21,14 +21,14 @@ const viewUsers = async (req,res) => {
 }  
 const viewUser = async (req,res) => {
     const id = req.params.id
-    let user;
+    
     try{
 
-       user= await User.findById(id);
-       return res.status(200).json({user: user})
+       const user= await User.findById(id);
+        res.status(200).json({user: user})
       }
       catch(err){
-        return res.status(500).json({message:"no user  found" })
+         res.status(500).json({message:"no user  found" })
       }
 }  
 const signupUser = async (req, res) => {
