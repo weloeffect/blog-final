@@ -6,7 +6,7 @@ const  UserBlogs = () =>  {
     const [user, setUser] = useState()
     const id = localStorage.getItem("userId")
     // const publicFolder = "http://localhost:5000/images/"
-    const publicFolder = "http://blog-backend101.herokuapp.com/images/"
+    const publicFolder = "https://blog-final101.herokuapp.com/images/"
     const sendRequest = async()=>{
         const res = await axiosInstance.get(`posts/user/${id}`).catch(err => console.log(err))
         const data = await res.data 
