@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd staff-frontend && npm run build",
+    "build": "npm i cd staff-frontend && npm i && npm run build",
     
     "start": "nodemon server.js"
   },
