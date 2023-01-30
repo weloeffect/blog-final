@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "npm start --prefix frontend",
+    "client": "npm i npm start --prefix frontend",
     "server": "nodemon server.js",
     "clientinstall": "npm install --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run  client\"",
